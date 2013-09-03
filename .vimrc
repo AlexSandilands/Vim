@@ -15,6 +15,8 @@ set backspace=indent,eol,start  "Allow backspace in insert mode
 set history=1000                "Store lots of :cmdline history
 set showcmd                     "Show incomplete cmds down the bottom
 set showmode                    "Show current mode down the bottom
+set novisualbell                "Turn off visual errors
+set noerrorbells                "Turn off error bells
 set gcr=a:blinkon0              "Disable cursor blink
 set autoread                    "Reload files changed outside vim
 
@@ -23,8 +25,13 @@ set autoread                    "Reload files changed outside vim
 " http://items.sjbach.com/319/configuring-vim-right
 set hidden
 
-"turn on syntax highlighting
-syntax on
+
+" ============== Colors and Fonts =================
+" Enable syntax highlighting
+syntax enable
+
+colorscheme desert
+set background=dark
 
 " ================ Search Settings  =================
 
